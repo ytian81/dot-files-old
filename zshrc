@@ -92,3 +92,17 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+# Anaconda3 PATH setup
+export SANS_ANACONDA="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
+# Add Anaconda3 PATH
+export PATH="/usr/local/anaconda3/bin:$SANS_ANACONDA"
+#
+alias perseus="export PATH="\$SANS_ANACONDA" && echo Medusa decapitated."
+alias medusa="export PATH="/usr/local/anaconda3/bin:\$SANS_ANACONDA" && echo Perseus defeated."
+#
+brew () {
+  perseus
+  command brew "$@"
+  medusa
+}
