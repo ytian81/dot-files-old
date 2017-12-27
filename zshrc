@@ -66,7 +66,6 @@ plugins=(
   osx
 )
 
-
 # User configuration
 
 # export MANPATH="/usr/local/man:$MANPATH"
@@ -96,6 +95,21 @@ plugins=(
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias vim="mvim -v"
+alias -s txt="subl"
+alias -s tar="tar -xvf"
+alias -s gz="tar -xzvf"
+alias -s tgz="tar -xzvf"
+alias -s bz2="tar -xjvf"
+alias -s zip="unzip"
+
+# man page highlight
+export LESS_TERMCAP_mb=$'\E[01;31m'       # begin blinking
+export LESS_TERMCAP_md=$'\E[01;38;5;74m'  # begin bold
+export LESS_TERMCAP_me=$'\E[0m'           # end mode
+export LESS_TERMCAP_se=$'\E[0m'           # end standout-mode
+export LESS_TERMCAP_so=$'\E[38;5;246m'    # begin standout-mode - info box
+export LESS_TERMCAP_ue=$'\E[0m'           # end underline
+export LESS_TERMCAP_us=$'\E[04;38;5;146m' # begin underline
 
 # Tmux setup
 export ZSH_TMUX_AUTOSTART=true 
