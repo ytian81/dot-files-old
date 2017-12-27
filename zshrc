@@ -37,10 +37,10 @@ export DEFAULT_USER=`whoami`
 # DISABLE_AUTO_TITLE="true"
 
 # Uncomment the following line to enable command auto-correction.
-ENABLE_CORRECTION="true"
+# ENABLE_CORRECTION="true"
 
 # Uncomment the following line to display red dots whilst waiting for completion.
-COMPLETION_WAITING_DOTS="true"
+# COMPLETION_WAITING_DOTS="true"
 
 # Uncomment the following line if you want to disable marking untracked files
 # under VCS as dirty. This makes repository status check for large repositories
@@ -134,16 +134,16 @@ export ZSH_TMUX_AUTOSTART=true
 export ZSH_TMUX_AUTOCONNECT=false
 
 # Autosuggestions setup
-export ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=3'
+export ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=1'
 bindkey '^ ' autosuggest-accept
 
 # Anaconda3 PATH setup
-export SANS_ANACONDA="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
+export SANS_ANACONDA="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Tex/texbin"
 # Add Anaconda3 PATH
 export PATH="/usr/local/anaconda3/bin:$SANS_ANACONDA"
 #
-alias perseus="export PATH="\$SANS_ANACONDA" && echo Medusa decapitated."
-alias medusa="export PATH="/usr/local/anaconda3/bin:\$SANS_ANACONDA" && echo Perseus defeated."
+alias perseus="export PATH=\"$SANS_ANACONDA\" && echo Medusa decapitated."
+alias medusa="export PATH=\"/usr/local/anaconda3/bin:$SANS_ANACONDA\" && echo Perseus defeated."
 #
 brew () {
   perseus
