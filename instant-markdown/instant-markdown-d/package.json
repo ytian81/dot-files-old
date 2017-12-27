@@ -1,0 +1,46 @@
+{
+  "_from": "instant-markdown-d",
+  "_id": "instant-markdown-d@0.1.0",
+  "_inBundle": false,
+  "_integrity": "sha1-2h/9EEQ7a3LBTYlrU9KSVQelcMY=",
+  "_location": "/instant-markdown-d",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "instant-markdown-d",
+    "name": "instant-markdown-d",
+    "escapedName": "instant-markdown-d",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "https://registry.npmjs.org/instant-markdown-d/-/instant-markdown-d-0.1.0.tgz",
+  "_shasum": "da1ffd10443b6b72c14d896b53d2925507a570c6",
+  "_spec": "instant-markdown-d",
+  "_where": "/Users/Yang/Documents/Configurations/dot-files/vim/bundle",
+  "author": {
+    "name": "Suan-Aik Yeo",
+    "email": "yeosuanaik@gmail.com"
+  },
+  "bin": {
+    "instant-markdown-d": "./instant-markdown-d"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "highlight.js": "^8.4.0",
+    "markdown-it": "^3.0.3",
+    "send": "~0.1.0",
+    "socket.io": ""
+  },
+  "deprecated": false,
+  "description": "Instantly-updating Markdown Server",
+  "engine": "node",
+  "main": "instant-markdown-d",
+  "name": "instant-markdown-d",
+  "preferGlobal": "true",
+  "version": "0.1.0"
+}
