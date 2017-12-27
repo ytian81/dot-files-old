@@ -37,10 +37,10 @@ export DEFAULT_USER=`whoami`
 # DISABLE_AUTO_TITLE="true"
 
 # Uncomment the following line to enable command auto-correction.
-# ENABLE_CORRECTION="true"
+ENABLE_CORRECTION="true"
 
 # Uncomment the following line to display red dots whilst waiting for completion.
-# COMPLETION_WAITING_DOTS="true"
+COMPLETION_WAITING_DOTS="true"
 
 # Uncomment the following line if you want to disable marking untracked files
 # under VCS as dirty. This makes repository status check for large repositories
@@ -64,6 +64,8 @@ plugins=(
   tmux
   autojump
   osx
+  zsh-autosuggestions
+  zsh-syntax-highlighting
 )
 
 # User configuration
@@ -95,6 +97,8 @@ plugins=(
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias vim="mvim -v"
+alias pwd='pwd; pwd | pbcopy'
+alias o='open'
 alias -s txt="subl"
 alias -s tar="tar -xvf"
 alias -s gz="tar -xzvf"
@@ -128,6 +132,10 @@ alias c='less -m -N -g -i -J --line-numbers --underline-special'
 # Tmux setup
 export ZSH_TMUX_AUTOSTART=true 
 export ZSH_TMUX_AUTOCONNECT=false
+
+# Autosuggestions setup
+export ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=3'
+bindkey '^ ' autosuggest-accept
 
 # Anaconda3 PATH setup
 export SANS_ANACONDA="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
