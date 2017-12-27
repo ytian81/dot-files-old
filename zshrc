@@ -61,9 +61,11 @@ export DEFAULT_USER=`whoami`
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
   git
+  tmux
+  autojump
+  osx
 )
 
-source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
@@ -95,6 +97,10 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias vim="mvim -v"
 
+# Tmux setup
+export ZSH_TMUX_AUTOSTART=true 
+export ZSH_TMUX_AUTOCONNECT=false
+
 # Anaconda3 PATH setup
 export SANS_ANACONDA="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
 # Add Anaconda3 PATH
@@ -108,3 +114,6 @@ brew () {
   command brew "$@"
   medusa
 }
+
+# Source oh-my-zsh
+source $ZSH/oh-my-zsh.sh
