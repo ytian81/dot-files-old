@@ -102,7 +102,13 @@ alias -s tgz="tar -xzvf"
 alias -s bz2="tar -xjvf"
 alias -s zip="unzip"
 
-# man page highlight
+export TERM=xterm-256color
+
+# Ls color
+# export LSCOLORS=gxfxcxdxbxegedabagacad
+export LSCOLORS=Exfxcxdxbxegedabagacad
+
+# Man page highlight
 export LESS_TERMCAP_mb=$'\E[01;31m'       # begin blinking
 export LESS_TERMCAP_md=$'\E[01;38;5;74m'  # begin bold
 export LESS_TERMCAP_me=$'\E[0m'           # end mode
@@ -110,6 +116,14 @@ export LESS_TERMCAP_se=$'\E[0m'           # end standout-mode
 export LESS_TERMCAP_so=$'\E[38;5;246m'    # begin standout-mode - info box
 export LESS_TERMCAP_ue=$'\E[0m'           # end underline
 export LESS_TERMCAP_us=$'\E[04;38;5;146m' # begin underline
+
+# Cat, less and more highlight
+export LESSOPEN="| $(which highlight) %s --out-format xterm256 --line-numbers --quiet --force --style solarized-dark"
+export LESS=" -R"
+alias less='less -m -N -g -i -J --line-numbers --underline-special'
+alias more='less'
+alias cat="$(which highlight) $1 --out-format xterm256 --line-numbers --quiet --force --style solarized-dark"
+alias c='less -m -N -g -i -J --line-numbers --underline-special'
 
 # Tmux setup
 export ZSH_TMUX_AUTOSTART=true 
