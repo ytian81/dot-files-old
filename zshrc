@@ -63,7 +63,6 @@ plugins=(
   git
   tmux
   autojump
-  osx
   zsh-autosuggestions
   zsh-syntax-highlighting
 )
@@ -135,8 +134,8 @@ bindkey '^ ' autosuggest-accept
 
 # PATH setup
 # Anaconda3, GNU CoreUtils
-export SANS_ANACONDA="$(brew --prefix coreutils)/libexec/gnubin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Tex/texbin"
-export MANPATH="$(brew --prefix coreutils)/libexec/gnuman:$MANPATH"
+export SANS_ANACONDA="/usr/local/opt/coreutils/libexec/gnubin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Tex/texbin"
+export MANPATH="/usr/local/opt/coreutils/libexec/gnuman:$MANPATH"
 # Add Anaconda3 PATH
 export PATH="/usr/local/anaconda3/bin:$SANS_ANACONDA"
 #

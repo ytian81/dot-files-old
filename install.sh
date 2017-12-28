@@ -52,3 +52,7 @@ brew install npm
 npm -g install instant-markdown-d
 ln -s ~/Documents/Configurations/dot-files/instant-markdown/instant-markdown.vim .vim/after/ftplugin/markdown/instant-markdown.vim
 ln -s ~/Documents/Configurations/dot-files/instant-markdown/instant-markdown-d/index.html /usr/local/lib/node_modules/instant-markdown-d/index.html 
+
+# --------------------------------------------------------------------------
+# Not necessary
+# reset NVRAM and SMC
