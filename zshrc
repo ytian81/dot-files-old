@@ -63,8 +63,6 @@ plugins=(
   git
   tmux
   autojump
-  zsh-autosuggestions
-  zsh-syntax-highlighting
 )
 
 # User configuration
