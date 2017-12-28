@@ -97,6 +97,7 @@ alias vim="mvim -v"
 alias pwd='pwd; pwd | pbcopy'
 alias o='open'
 alias -s txt="subl"
+alias -s pdf="open"
 alias -s tar="tar -xvf"
 alias -s gz="tar -xzvf"
 alias -s tgz="tar -xzvf"
