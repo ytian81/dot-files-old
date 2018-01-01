@@ -152,5 +152,10 @@ brew () {
 alias ls='ls -F -h --show-control-chars --color=auto'
 eval `gdircolors -b $HOME/.dir_colors`
 
+# python virtual environment
+alias deactivate='source deactivate'
+# pyTorch activate
+alias pyTorch='source activate pyTorch'
+
 # Source oh-my-zsh
 source $ZSH/oh-my-zsh.sh
