@@ -157,5 +157,8 @@ alias deactivate='source deactivate'
 # pyTorch activate
 alias pyTorch='source activate pyTorch'
 
+# the fuck correction
+eval $(thefuck --alias f)
+
 # Source oh-my-zsh
 source $ZSH/oh-my-zsh.sh
