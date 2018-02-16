@@ -7,7 +7,7 @@ export ZSH=~/.oh-my-zsh
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="robbyrussell"
+ZSH_THEME="agnosterzak"
 
 # Set list of themes to load
 # Setting this variable when ZSH_THEME=random
@@ -60,9 +60,9 @@ ZSH_THEME="robbyrussell"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
   git
+  tmux
+  autojump
 )
-
-source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
@@ -92,3 +92,14 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+
+# PATH setup
+# added by Anaconda3 installer
+export PATH="/home/ytian/anaconda3/bin:$PATH"
+
+# Tmux setup
+export ZSH_TMUX_AUTOSTART=true 
+export ZSH_TMUX_AUTOCONNECT=false
+
+source $ZSH/oh-my-zsh.sh
