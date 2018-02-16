@@ -102,4 +102,6 @@ export PATH="/home/ytian/anaconda3/bin:$PATH"
 export ZSH_TMUX_AUTOSTART=true 
 export ZSH_TMUX_AUTOCONNECT=false
 
+eval `dircolors ~/.dir_colors/dircolors`
+
 source $ZSH/oh-my-zsh.sh
