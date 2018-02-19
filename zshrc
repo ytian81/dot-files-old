@@ -93,11 +93,6 @@ plugins=(
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-
-# PATH setup
-# added by Anaconda3 installer
-export PATH="/home/ytian/anaconda3/bin:$PATH"
-
 # Tmux setup
 export ZSH_TMUX_AUTOSTART=true 
 export ZSH_TMUX_AUTOCONNECT=false
