@@ -20,7 +20,7 @@ set background=dark
 colorscheme solarized
 
 " powerline
-source ~/anaconda3/lib/python3.6/site-packages/powerline/bindings/vim/plugin/powerline.vim
+source /usr/local/lib/python2.7/dist-packages/powerline/bindings/vim/plugin/powerline.vim
 set t_Co=256
 let g:minBufExplForceSyntaxEnable = 1
 python3 from powerline.vim import setup as powerline_setup
