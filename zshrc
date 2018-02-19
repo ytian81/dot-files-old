@@ -93,10 +93,11 @@ plugins=(
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-# Tmux setup
+# tmux setup
 export ZSH_TMUX_AUTOSTART=true 
 export ZSH_TMUX_AUTOCONNECT=false
 
+# enable color support for ls
 eval `dircolors ~/.dir_colors/dircolors`
 
 source $ZSH/oh-my-zsh.sh
