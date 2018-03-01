@@ -38,6 +38,7 @@ set completeopt=longest,menu
 set wildmenu
 set scrolloff=3
 set confirm
+set number
 set relativenumber
 set backspace=2
 set mouse=a
